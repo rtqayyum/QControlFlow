@@ -1,0 +1,3813 @@
+{
+  "suite": "main",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "cpu": "",
+  "workers": 4,
+  "latency_mode": 0.3,
+  "runtime_s": 29.994447725999635,
+  "runs": 1120,
+  "requests": 35840,
+  "jobs": [
+    {
+      "topology": "abilene",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 15,
+      "classical_directed_edges": 38,
+      "warm_catalog_build_ms": 32.05577100015944,
+      "candidate_plans": {
+        "3-1": 16,
+        "6-11": 16,
+        "2-0": 24,
+        "11-5": 14,
+        "4-9": 14,
+        "5-0": 22,
+        "10-2": 37,
+        "2-1": 14,
+        "7-1": 22,
+        "7-5": 16,
+        "1-7": 22,
+        "8-1": 18
+      }
+    },
+    {
+      "topology": "polska",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          11,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 18,
+      "classical_directed_edges": 44,
+      "warm_catalog_build_ms": 27.325794000716996,
+      "candidate_plans": {
+        "11-5": 20,
+        "9-4": 24,
+        "7-3": 14,
+        "4-9": 24,
+        "5-3": 16,
+        "3-5": 16,
+        "9-1": 12,
+        "10-8": 8,
+        "1-4": 18,
+        "5-11": 20,
+        "9-3": 24,
+        "1-9": 12
+      }
+    },
+    {
+      "topology": "synthetic-24-1",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          10
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 122.20845899901178,
+      "candidate_plans": {
+        "19-10": 28,
+        "1-17": 12,
+        "18-8": 24,
+        "7-9": 14,
+        "9-2": 18,
+        "16-23": 18,
+        "9-18": 20,
+        "9-11": 22,
+        "17-23": 12,
+        "2-21": 18,
+        "2-19": 10,
+        "7-4": 20
+      }
+    },
+    {
+      "topology": "synthetic-24-2",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          2,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          21
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          20,
+          5
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 74.62018400110537,
+      "candidate_plans": {
+        "2-12": 27,
+        "21-6": 33,
+        "15-8": 24,
+        "15-6": 28,
+        "15-21": 24,
+        "20-4": 20,
+        "3-22": 37,
+        "7-13": 8,
+        "13-5": 28,
+        "18-4": 24,
+        "5-9": 12,
+        "20-5": 16
+      }
+    },
+    {
+      "topology": "synthetic-24-3",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 84.00049099873286,
+      "candidate_plans": {
+        "0-13": 20,
+        "15-7": 24,
+        "3-8": 24,
+        "6-0": 28,
+        "22-6": 20,
+        "8-19": 42,
+        "9-22": 28,
+        "1-10": 26,
+        "7-5": 22,
+        "12-23": 24,
+        "16-21": 8,
+        "7-14": 28
+      }
+    },
+    {
+      "topology": "synthetic-36-1",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          3
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          26,
+          16
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          32,
+          14
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          17,
+          20
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 118.86848799986183,
+      "candidate_plans": {
+        "26-3": 32,
+        "8-12": 32,
+        "15-11": 28,
+        "0-19": 33,
+        "26-16": 32,
+        "19-21": 22,
+        "31-35": 18,
+        "32-14": 20,
+        "13-35": 22,
+        "17-20": 21,
+        "6-4": 26,
+        "13-4": 22
+      }
+    },
+    {
+      "topology": "synthetic-36-2",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          6
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          34,
+          9
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 96.42748900114384,
+      "candidate_plans": {
+        "19-6": 18,
+        "0-20": 31,
+        "29-0": 22,
+        "9-25": 28,
+        "2-4": 2,
+        "13-10": 12,
+        "20-9": 24,
+        "34-9": 26,
+        "13-30": 20,
+        "20-16": 29,
+        "31-29": 19,
+        "9-22": 24
+      }
+    },
+    {
+      "topology": "synthetic-36-3",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          13
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          26,
+          31
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 99.39340900018578,
+      "candidate_plans": {
+        "26-13": 27,
+        "6-15": 20,
+        "11-19": 14,
+        "0-27": 24,
+        "1-9": 35,
+        "0-33": 24,
+        "30-23": 28,
+        "28-10": 32,
+        "34-12": 14,
+        "26-31": 24,
+        "12-23": 22,
+        "24-12": 16
+      }
+    },
+    {
+      "topology": "abilene",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 15,
+      "classical_directed_edges": 38,
+      "warm_catalog_build_ms": 46.57481799949892,
+      "candidate_plans": {
+        "3-1": 16,
+        "6-11": 16,
+        "2-0": 24,
+        "11-5": 14,
+        "4-9": 14,
+        "5-0": 22,
+        "10-2": 37,
+        "2-1": 14,
+        "7-1": 22,
+        "7-5": 16,
+        "1-7": 22,
+        "8-1": 18
+      }
+    },
+    {
+      "topology": "polska",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          11,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 18,
+      "classical_directed_edges": 44,
+      "warm_catalog_build_ms": 29.083089999403455,
+      "candidate_plans": {
+        "11-5": 20,
+        "9-4": 24,
+        "7-3": 14,
+        "4-9": 24,
+        "5-3": 16,
+        "3-5": 16,
+        "9-1": 12,
+        "10-8": 8,
+        "1-4": 18,
+        "5-11": 20,
+        "9-3": 24,
+        "1-9": 12
+      }
+    },
+    {
+      "topology": "synthetic-24-1",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          10
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 69.39173099999607,
+      "candidate_plans": {
+        "19-10": 28,
+        "1-17": 12,
+        "18-8": 24,
+        "7-9": 14,
+        "9-2": 18,
+        "16-23": 18,
+        "9-18": 20,
+        "9-11": 22,
+        "17-23": 12,
+        "2-21": 18,
+        "2-19": 10,
+        "7-4": 20
+      }
+    },
+    {
+      "topology": "synthetic-24-2",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          2,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          21
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          20,
+          5
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 91.60430700103461,
+      "candidate_plans": {
+        "2-12": 27,
+        "21-6": 33,
+        "15-8": 24,
+        "15-6": 28,
+        "15-21": 24,
+        "20-4": 20,
+        "3-22": 37,
+        "7-13": 8,
+        "13-5": 28,
+        "18-4": 24,
+        "5-9": 12,
+        "20-5": 16
+      }
+    },
+    {
+      "topology": "synthetic-24-3",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 79.72003900067648,
+      "candidate_plans": {
+        "0-13": 20,
+        "15-7": 24,
+        "3-8": 24,
+        "6-0": 28,
+        "22-6": 20,
+        "8-19": 42,
+        "9-22": 28,
+        "1-10": 26,
+        "7-5": 22,
+        "12-23": 24,
+        "16-21": 8,
+        "7-14": 28
+      }
+    },
+    {
+      "topology": "synthetic-36-1",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          3
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          26,
+          16
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          32,
+          14
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          17,
+          20
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 128.4705030011537,
+      "candidate_plans": {
+        "26-3": 32,
+        "8-12": 32,
+        "15-11": 28,
+        "0-19": 33,
+        "26-16": 32,
+        "19-21": 22,
+        "31-35": 18,
+        "32-14": 20,
+        "13-35": 22,
+        "17-20": 21,
+        "6-4": 26,
+        "13-4": 22
+      }
+    },
+    {
+      "topology": "synthetic-36-2",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          6
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          34,
+          9
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 99.55034199992951,
+      "candidate_plans": {
+        "19-6": 18,
+        "0-20": 31,
+        "29-0": 22,
+        "9-25": 28,
+        "2-4": 2,
+        "13-10": 12,
+        "20-9": 24,
+        "34-9": 26,
+        "13-30": 20,
+        "20-16": 29,
+        "31-29": 19,
+        "9-22": 24
+      }
+    },
+    {
+      "topology": "synthetic-36-3",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          13
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          26,
+          31
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 115.03893899862305,
+      "candidate_plans": {
+        "26-13": 27,
+        "6-15": 20,
+        "11-19": 14,
+        "0-27": 24,
+        "1-9": 35,
+        "0-33": 24,
+        "30-23": 28,
+        "28-10": 32,
+        "34-12": 14,
+        "26-31": 24,
+        "12-23": 22,
+        "24-12": 16
+      }
+    },
+    {
+      "topology": "abilene",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 15,
+      "classical_directed_edges": 38,
+      "warm_catalog_build_ms": 28.55604099931952,
+      "candidate_plans": {
+        "3-1": 16,
+        "6-11": 16,
+        "2-0": 24,
+        "11-5": 14,
+        "4-9": 14,
+        "5-0": 22,
+        "10-2": 37,
+        "2-1": 14,
+        "7-1": 22,
+        "7-5": 16,
+        "1-7": 22,
+        "8-1": 18
+      }
+    },
+    {
+      "topology": "polska",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          11,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 18,
+      "classical_directed_edges": 44,
+      "warm_catalog_build_ms": 27.81568799946399,
+      "candidate_plans": {
+        "11-5": 20,
+        "9-4": 24,
+        "7-3": 14,
+        "4-9": 24,
+        "5-3": 16,
+        "3-5": 16,
+        "9-1": 12,
+        "10-8": 8,
+        "1-4": 18,
+        "5-11": 20,
+        "9-3": 24,
+        "1-9": 12
+      }
+    },
+    {
+      "topology": "synthetic-24-1",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          10
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 113.81152600006317,
+      "candidate_plans": {
+        "19-10": 28,
+        "1-17": 12,
+        "18-8": 24,
+        "7-9": 14,
+        "9-2": 18,
+        "16-23": 18,
+        "9-18": 20,
+        "9-11": 22,
+        "17-23": 12,
+        "2-21": 18,
+        "2-19": 10,
+        "7-4": 20
+      }
+    },
+    {
+      "topology": "synthetic-24-2",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          2,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          21
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          20,
+          5
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 68.61177900100301,
+      "candidate_plans": {
+        "2-12": 27,
+        "21-6": 33,
+        "15-8": 24,
+        "15-6": 28,
+        "15-21": 24,
+        "20-4": 20,
+        "3-22": 37,
+        "7-13": 8,
+        "13-5": 28,
+        "18-4": 24,
+        "5-9": 12,
+        "20-5": 16
+      }
+    },
+    {
+      "topology": "synthetic-24-3",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 122.18204300006619,
+      "candidate_plans": {
+        "0-13": 20,
+        "15-7": 24,
+        "3-8": 24,
+        "6-0": 28,
+        "22-6": 20,
+        "8-19": 42,
+        "9-22": 28,
+        "1-10": 26,
+        "7-5": 22,
+        "12-23": 24,
+        "16-21": 8,
+        "7-14": 28
+      }
+    },
+    {
+      "topology": "synthetic-36-1",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          3
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          26,
+          16
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          32,
+          14
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          17,
+          20
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 105.01127899988205,
+      "candidate_plans": {
+        "26-3": 32,
+        "8-12": 32,
+        "15-11": 28,
+        "0-19": 33,
+        "26-16": 32,
+        "19-21": 22,
+        "31-35": 18,
+        "32-14": 20,
+        "13-35": 22,
+        "17-20": 21,
+        "6-4": 26,
+        "13-4": 22
+      }
+    },
+    {
+      "topology": "synthetic-36-2",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          6
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          34,
+          9
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 98.11785700003384,
+      "candidate_plans": {
+        "19-6": 18,
+        "0-20": 31,
+        "29-0": 22,
+        "9-25": 28,
+        "2-4": 2,
+        "13-10": 12,
+        "20-9": 24,
+        "34-9": 26,
+        "13-30": 20,
+        "20-16": 29,
+        "31-29": 19,
+        "9-22": 24
+      }
+    },
+    {
+      "topology": "synthetic-36-3",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          13
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          26,
+          31
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 100.55260099943553,
+      "candidate_plans": {
+        "26-13": 27,
+        "6-15": 20,
+        "11-19": 14,
+        "0-27": 24,
+        "1-9": 35,
+        "0-33": 24,
+        "30-23": 28,
+        "28-10": 32,
+        "34-12": 14,
+        "26-31": 24,
+        "12-23": 22,
+        "24-12": 16
+      }
+    },
+    {
+      "topology": "abilene",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 15,
+      "classical_directed_edges": 38,
+      "warm_catalog_build_ms": 29.92944000106945,
+      "candidate_plans": {
+        "3-1": 16,
+        "6-11": 16,
+        "2-0": 24,
+        "11-5": 14,
+        "4-9": 14,
+        "5-0": 22,
+        "10-2": 37,
+        "2-1": 14,
+        "7-1": 22,
+        "7-5": 16,
+        "1-7": 22,
+        "8-1": 18
+      }
+    },
+    {
+      "topology": "polska",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          11,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 18,
+      "classical_directed_edges": 44,
+      "warm_catalog_build_ms": 29.572983999969438,
+      "candidate_plans": {
+        "11-5": 20,
+        "9-4": 24,
+        "7-3": 14,
+        "4-9": 24,
+        "5-3": 16,
+        "3-5": 16,
+        "9-1": 12,
+        "10-8": 8,
+        "1-4": 18,
+        "5-11": 20,
+        "9-3": 24,
+        "1-9": 12
+      }
+    },
+    {
+      "topology": "synthetic-24-1",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          10
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 197.4027020005451,
+      "candidate_plans": {
+        "19-10": 28,
+        "1-17": 12,
+        "18-8": 24,
+        "7-9": 14,
+        "9-2": 18,
+        "16-23": 18,
+        "9-18": 20,
+        "9-11": 22,
+        "17-23": 12,
+        "2-21": 18,
+        "2-19": 10,
+        "7-4": 20
+      }
+    },
+    {
+      "topology": "synthetic-24-2",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          2,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          21
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          20,
+          5
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 70.82705200082273,
+      "candidate_plans": {
+        "2-12": 27,
+        "21-6": 33,
+        "15-8": 24,
+        "15-6": 28,
+        "15-21": 24,
+        "20-4": 20,
+        "3-22": 37,
+        "7-13": 8,
+        "13-5": 28,
+        "18-4": 24,
+        "5-9": 12,
+        "20-5": 16
+      }
+    },
+    {
+      "topology": "synthetic-24-3",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 99.24026100088668,
+      "candidate_plans": {
+        "0-13": 20,
+        "15-7": 24,
+        "3-8": 24,
+        "6-0": 28,
+        "22-6": 20,
+        "8-19": 42,
+        "9-22": 28,
+        "1-10": 26,
+        "7-5": 22,
+        "12-23": 24,
+        "16-21": 8,
+        "7-14": 28
+      }
+    },
+    {
+      "topology": "synthetic-36-1",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          3
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          26,
+          16
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          32,
+          14
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          17,
+          20
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 147.63664300153323,
+      "candidate_plans": {
+        "26-3": 32,
+        "8-12": 32,
+        "15-11": 28,
+        "0-19": 33,
+        "26-16": 32,
+        "19-21": 22,
+        "31-35": 18,
+        "32-14": 20,
+        "13-35": 22,
+        "17-20": 21,
+        "6-4": 26,
+        "13-4": 22
+      }
+    },
+    {
+      "topology": "synthetic-36-2",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          6
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          34,
+          9
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 107.28000900053303,
+      "candidate_plans": {
+        "19-6": 18,
+        "0-20": 31,
+        "29-0": 22,
+        "9-25": 28,
+        "2-4": 2,
+        "13-10": 12,
+        "20-9": 24,
+        "34-9": 26,
+        "13-30": 20,
+        "20-16": 29,
+        "31-29": 19,
+        "9-22": 24
+      }
+    },
+    {
+      "topology": "synthetic-36-3",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          13
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          26,
+          31
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 110.12447000030079,
+      "candidate_plans": {
+        "26-13": 27,
+        "6-15": 20,
+        "11-19": 14,
+        "0-27": 24,
+        "1-9": 35,
+        "0-33": 24,
+        "30-23": 28,
+        "28-10": 32,
+        "34-12": 14,
+        "26-31": 24,
+        "12-23": 22,
+        "24-12": 16
+      }
+    },
+    {
+      "topology": "abilene",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 15,
+      "classical_directed_edges": 38,
+      "warm_catalog_build_ms": 28.27146100025857,
+      "candidate_plans": {
+        "3-1": 16,
+        "6-11": 16,
+        "2-0": 24,
+        "11-5": 14,
+        "4-9": 14,
+        "5-0": 22,
+        "10-2": 37,
+        "2-1": 14,
+        "7-1": 22,
+        "7-5": 16,
+        "1-7": 22,
+        "8-1": 18
+      }
+    },
+    {
+      "topology": "polska",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          11,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "nodes": 12,
+      "quantum_edges": 18,
+      "classical_directed_edges": 44,
+      "warm_catalog_build_ms": 29.791335999107105,
+      "candidate_plans": {
+        "11-5": 20,
+        "9-4": 24,
+        "7-3": 14,
+        "4-9": 24,
+        "5-3": 16,
+        "3-5": 16,
+        "9-1": 12,
+        "10-8": 8,
+        "1-4": 18,
+        "5-11": 20,
+        "9-3": 24,
+        "1-9": 12
+      }
+    },
+    {
+      "topology": "synthetic-24-1",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          10
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 119.65923400020984,
+      "candidate_plans": {
+        "19-10": 28,
+        "1-17": 12,
+        "18-8": 24,
+        "7-9": 14,
+        "9-2": 18,
+        "16-23": 18,
+        "9-18": 20,
+        "9-11": 22,
+        "17-23": 12,
+        "2-21": 18,
+        "2-19": 10,
+        "7-4": 20
+      }
+    },
+    {
+      "topology": "synthetic-24-2",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          2,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          21
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          20,
+          5
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 66.72503299887467,
+      "candidate_plans": {
+        "2-12": 27,
+        "21-6": 33,
+        "15-8": 24,
+        "15-6": 28,
+        "15-21": 24,
+        "20-4": 20,
+        "3-22": 37,
+        "7-13": 8,
+        "13-5": 28,
+        "18-4": 24,
+        "5-9": 12,
+        "20-5": 16
+      }
+    },
+    {
+      "topology": "synthetic-24-3",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          0,
+          13
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "nodes": 24,
+      "quantum_edges": 36,
+      "classical_directed_edges": 88,
+      "warm_catalog_build_ms": 90.01329400052782,
+      "candidate_plans": {
+        "0-13": 20,
+        "15-7": 24,
+        "3-8": 24,
+        "6-0": 28,
+        "22-6": 20,
+        "8-19": 42,
+        "9-22": 28,
+        "1-10": 26,
+        "7-5": 22,
+        "12-23": 24,
+        "16-21": 8,
+        "7-14": 28
+      }
+    },
+    {
+      "topology": "synthetic-36-1",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          3
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          26,
+          16
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          32,
+          14
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          17,
+          20
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 117.17727999894123,
+      "candidate_plans": {
+        "26-3": 32,
+        "8-12": 32,
+        "15-11": 28,
+        "0-19": 33,
+        "26-16": 32,
+        "19-21": 22,
+        "31-35": 18,
+        "32-14": 20,
+        "13-35": 22,
+        "17-20": 21,
+        "6-4": 26,
+        "13-4": 22
+      }
+    },
+    {
+      "topology": "synthetic-36-2",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          19,
+          6
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          34,
+          9
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 110.34965299950272,
+      "candidate_plans": {
+        "19-6": 18,
+        "0-20": 31,
+        "29-0": 22,
+        "9-25": 28,
+        "2-4": 2,
+        "13-10": 12,
+        "20-9": 24,
+        "34-9": 26,
+        "13-30": 20,
+        "20-16": 29,
+        "31-29": 19,
+        "9-22": 24
+      }
+    },
+    {
+      "topology": "synthetic-36-3",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "seeds": [
+        2027,
+        2140,
+        2253,
+        2366
+      ],
+      "policies": [
+        "qsp",
+        "sequential",
+        "mean",
+        "single",
+        "static",
+        "joint",
+        "chain"
+      ],
+      "pairs": [
+        [
+          26,
+          13
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          0,
+          27
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          33
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          26,
+          31
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ],
+      "nodes": 36,
+      "quantum_edges": 54,
+      "classical_directed_edges": 132,
+      "warm_catalog_build_ms": 103.59736799910024,
+      "candidate_plans": {
+        "26-13": 27,
+        "6-15": 20,
+        "11-19": 14,
+        "0-27": 24,
+        "1-9": 35,
+        "0-33": 24,
+        "30-23": 28,
+        "28-10": 32,
+        "34-12": 14,
+        "26-31": 24,
+        "12-23": 22,
+        "24-12": 16
+      }
+    }
+  ]
+}

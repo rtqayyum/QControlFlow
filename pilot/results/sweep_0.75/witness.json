@@ -1,0 +1,927 @@
+{
+  "description": "Illustrative held-out replay where both detours are needed",
+  "seed": 6525032439734304341,
+  "condition": {
+    "load": 0.9,
+    "memory_scale": 1.0,
+    "min_fidelity": 0.85,
+    "deadline_ms": 10.0
+  },
+  "planner_ms": 0.1,
+  "plans": {
+    "A-00": {
+      "quantum_nodes": [
+        "A",
+        "R1",
+        "R2",
+        "B"
+      ],
+      "control_routes": {
+        "R1": [
+          "R1",
+          "R2",
+          "B"
+        ],
+        "R2": [
+          "R2",
+          "B"
+        ]
+      },
+      "verdict": "fidelity",
+      "fidelity": 0.8296903321217572,
+      "wait_allowance_ms": 4.374112555999935,
+      "failure": null,
+      "ready_ms": 2.0028,
+      "frame_ready_ms": 7.409980687740468,
+      "raw_visibility": 0.9509062521777777,
+      "pre_gate_exposure": 0.02700000000000001,
+      "endpoint_rate": 0.03333333333333333,
+      "frame": 2,
+      "control_bytes_hops": 480,
+      "control_drops": 0,
+      "trace": [
+        {
+          "time_ms": 0.1,
+          "event": "node_activated",
+          "node": "A"
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R1",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R2",
+          "edge": [
+            "A",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:B",
+          "edge": [
+            "A",
+            "B"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "packet_arrival",
+          "packet": "activate:R1",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "node_activated",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "generation_start",
+          "edge": [
+            "A",
+            "R1"
+          ]
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "packet_arrival",
+          "packet": "activate:R2",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "node_activated",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "generation_start",
+          "edge": [
+            "R1",
+            "R2"
+          ]
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "packet_arrival",
+          "packet": "activate:B",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "node_activated",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "generation_start",
+          "edge": [
+            "R2",
+            "B"
+          ]
+        },
+        {
+          "time_ms": 1.4928,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "swap_start",
+          "node": "R1"
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "swap_complete",
+          "node": "R1",
+          "success": true,
+          "frame": 2
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "swap_start",
+          "node": "R2"
+        },
+        {
+          "time_ms": 1.992,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "wait_ms": 5.045980687740468
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "swap_complete",
+          "node": "R2",
+          "success": true,
+          "frame": 0
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "wait_ms": 5.131180687740468
+        },
+        {
+          "time_ms": 7.313980687740468,
+          "event": "packet_arrival",
+          "packet": "outcome:R1",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.409980687740468,
+          "event": "packet_arrival",
+          "packet": "outcome:R2",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.409980687740468,
+          "event": "endpoint_frame_ready",
+          "node": "B"
+        }
+      ]
+    },
+    "A-10": {
+      "quantum_nodes": [
+        "A",
+        "R1",
+        "R2",
+        "B"
+      ],
+      "control_routes": {
+        "R1": [
+          "R1",
+          "R3",
+          "B"
+        ],
+        "R2": [
+          "R2",
+          "B"
+        ]
+      },
+      "verdict": "fidelity",
+      "fidelity": 0.8315483123674637,
+      "wait_allowance_ms": 4.374112555999935,
+      "failure": null,
+      "ready_ms": 2.0028,
+      "frame_ready_ms": 7.313980687740468,
+      "raw_visibility": 0.9509062521777777,
+      "pre_gate_exposure": 0.02700000000000001,
+      "endpoint_rate": 0.03333333333333333,
+      "frame": 2,
+      "control_bytes_hops": 480,
+      "control_drops": 0,
+      "trace": [
+        {
+          "time_ms": 0.1,
+          "event": "node_activated",
+          "node": "A"
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R1",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R2",
+          "edge": [
+            "A",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:B",
+          "edge": [
+            "A",
+            "B"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "packet_arrival",
+          "packet": "activate:R1",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "node_activated",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "generation_start",
+          "edge": [
+            "A",
+            "R1"
+          ]
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "packet_arrival",
+          "packet": "activate:R2",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "node_activated",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "generation_start",
+          "edge": [
+            "R1",
+            "R2"
+          ]
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "packet_arrival",
+          "packet": "activate:B",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "node_activated",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "generation_start",
+          "edge": [
+            "R2",
+            "B"
+          ]
+        },
+        {
+          "time_ms": 1.4928,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "swap_start",
+          "node": "R1"
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "swap_complete",
+          "node": "R1",
+          "success": true,
+          "frame": 2
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R1",
+            "R3"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "swap_start",
+          "node": "R2"
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "swap_complete",
+          "node": "R2",
+          "success": true,
+          "frame": 0
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "wait_ms": 5.035180687740468
+        },
+        {
+          "time_ms": 2.492,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R3",
+            "B"
+          ],
+          "wait_ms": 2.5136796537219572
+        },
+        {
+          "time_ms": 5.401679653721957,
+          "event": "packet_arrival",
+          "packet": "outcome:R1",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.313980687740468,
+          "event": "packet_arrival",
+          "packet": "outcome:R2",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.313980687740468,
+          "event": "endpoint_frame_ready",
+          "node": "B"
+        }
+      ]
+    },
+    "A-01": {
+      "quantum_nodes": [
+        "A",
+        "R1",
+        "R2",
+        "B"
+      ],
+      "control_routes": {
+        "R1": [
+          "R1",
+          "R2",
+          "B"
+        ],
+        "R2": [
+          "R2",
+          "R3",
+          "B"
+        ]
+      },
+      "verdict": "fidelity",
+      "fidelity": 0.8315483123674637,
+      "wait_allowance_ms": 4.374112555999935,
+      "failure": null,
+      "ready_ms": 2.0028,
+      "frame_ready_ms": 7.313980687740468,
+      "raw_visibility": 0.9509062521777777,
+      "pre_gate_exposure": 0.02700000000000001,
+      "endpoint_rate": 0.03333333333333333,
+      "frame": 2,
+      "control_bytes_hops": 576,
+      "control_drops": 0,
+      "trace": [
+        {
+          "time_ms": 0.1,
+          "event": "node_activated",
+          "node": "A"
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R1",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R2",
+          "edge": [
+            "A",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:B",
+          "edge": [
+            "A",
+            "B"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "packet_arrival",
+          "packet": "activate:R1",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "node_activated",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "generation_start",
+          "edge": [
+            "A",
+            "R1"
+          ]
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "packet_arrival",
+          "packet": "activate:R2",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "node_activated",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "generation_start",
+          "edge": [
+            "R1",
+            "R2"
+          ]
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "packet_arrival",
+          "packet": "activate:B",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "node_activated",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "generation_start",
+          "edge": [
+            "R2",
+            "B"
+          ]
+        },
+        {
+          "time_ms": 1.4928,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "swap_start",
+          "node": "R1"
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "swap_complete",
+          "node": "R1",
+          "success": true,
+          "frame": 2
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "swap_start",
+          "node": "R2"
+        },
+        {
+          "time_ms": 1.992,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "wait_ms": 5.045980687740468
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "swap_complete",
+          "node": "R2",
+          "success": true,
+          "frame": 0
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R2",
+            "R3"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 2.7220000000000004,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R3",
+            "B"
+          ],
+          "wait_ms": 2.283679653721957
+        },
+        {
+          "time_ms": 5.401679653721957,
+          "event": "packet_arrival",
+          "packet": "outcome:R2",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.313980687740468,
+          "event": "packet_arrival",
+          "packet": "outcome:R1",
+          "node": "B"
+        },
+        {
+          "time_ms": 7.313980687740468,
+          "event": "endpoint_frame_ready",
+          "node": "B"
+        }
+      ]
+    },
+    "A-11": {
+      "quantum_nodes": [
+        "A",
+        "R1",
+        "R2",
+        "B"
+      ],
+      "control_routes": {
+        "R1": [
+          "R1",
+          "R3",
+          "B"
+        ],
+        "R2": [
+          "R2",
+          "R3",
+          "B"
+        ]
+      },
+      "verdict": "qualified",
+      "fidelity": 0.8678448774733554,
+      "wait_allowance_ms": 4.374112555999935,
+      "failure": null,
+      "ready_ms": 2.0028,
+      "frame_ready_ms": 5.497679653721957,
+      "raw_visibility": 0.9509062521777777,
+      "pre_gate_exposure": 0.02700000000000001,
+      "endpoint_rate": 0.03333333333333333,
+      "frame": 2,
+      "control_bytes_hops": 576,
+      "control_drops": 0,
+      "trace": [
+        {
+          "time_ms": 0.1,
+          "event": "node_activated",
+          "node": "A"
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R1",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:R2",
+          "edge": [
+            "A",
+            "R2"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.1,
+          "event": "packet_enqueue",
+          "packet": "activate:B",
+          "edge": [
+            "A",
+            "B"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "packet_arrival",
+          "packet": "activate:R1",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "node_activated",
+          "node": "R1"
+        },
+        {
+          "time_ms": 0.2928,
+          "event": "generation_start",
+          "edge": [
+            "A",
+            "R1"
+          ]
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "packet_arrival",
+          "packet": "activate:R2",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "node_activated",
+          "node": "R2"
+        },
+        {
+          "time_ms": 0.3728,
+          "event": "generation_start",
+          "edge": [
+            "R1",
+            "R2"
+          ]
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "packet_arrival",
+          "packet": "activate:B",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "node_activated",
+          "node": "B"
+        },
+        {
+          "time_ms": 0.45280000000000004,
+          "event": "generation_start",
+          "edge": [
+            "R2",
+            "B"
+          ]
+        },
+        {
+          "time_ms": 1.4928,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "A",
+            "R1"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R1",
+            "R2"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.6728,
+          "event": "swap_start",
+          "node": "R1"
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "swap_complete",
+          "node": "R1",
+          "success": true,
+          "frame": 2
+        },
+        {
+          "time_ms": 1.8228,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R1",
+            "R3"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "elementary_pair_ready",
+          "edge": [
+            "R2",
+            "B"
+          ],
+          "attempt": 1
+        },
+        {
+          "time_ms": 1.8528,
+          "event": "swap_start",
+          "node": "R2"
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "swap_complete",
+          "node": "R2",
+          "success": true,
+          "frame": 0
+        },
+        {
+          "time_ms": 2.0028,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R2",
+            "R3"
+          ],
+          "wait_ms": 0.0
+        },
+        {
+          "time_ms": 2.492,
+          "event": "packet_enqueue",
+          "packet": "outcome:R1",
+          "edge": [
+            "R3",
+            "B"
+          ],
+          "wait_ms": 2.5136796537219572
+        },
+        {
+          "time_ms": 2.7220000000000004,
+          "event": "packet_enqueue",
+          "packet": "outcome:R2",
+          "edge": [
+            "R3",
+            "B"
+          ],
+          "wait_ms": 2.379679653721957
+        },
+        {
+          "time_ms": 5.401679653721957,
+          "event": "packet_arrival",
+          "packet": "outcome:R1",
+          "node": "B"
+        },
+        {
+          "time_ms": 5.497679653721957,
+          "event": "packet_arrival",
+          "packet": "outcome:R2",
+          "node": "B"
+        },
+        {
+          "time_ms": 5.497679653721957,
+          "event": "endpoint_frame_ready",
+          "node": "B"
+        }
+      ]
+    }
+  }
+}

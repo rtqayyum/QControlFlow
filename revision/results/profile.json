@@ -1,0 +1,128 @@
+{
+  "utc_time": "2026-11-13T14:54:06.935270+00:00",
+  "hardware": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_model": "Apple M5",
+    "logical_cpus": "10",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "protocol_sha256": "593acc27407a0a2a1bde0d03b7a0dcc656a393dec1fbd304a7ea079e42bc5675",
+  "single_process": true,
+  "rows": [
+    {
+      "nodes": 24,
+      "measurements": {
+        "qsp": {
+          "median_ms": 0.0135625,
+          "p95_ms": 0.015502049999999998,
+          "samples": 800
+        },
+        "fast_sequential": {
+          "median_ms": 0.031729,
+          "p95_ms": 0.035836049999999994,
+          "samples": 800
+        },
+        "fast_joint": {
+          "median_ms": 0.044125,
+          "p95_ms": 0.05225,
+          "samples": 800
+        },
+        "base": {
+          "median_ms": 0.042583,
+          "p95_ms": 0.050875,
+          "samples": 800
+        },
+        "full": {
+          "median_ms": 0.0456665,
+          "p95_ms": 0.05092324999999999,
+          "samples": 800
+        }
+      },
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "nodes": 36,
+      "measurements": {
+        "qsp": {
+          "median_ms": 0.01675,
+          "p95_ms": 0.018673249999999995,
+          "samples": 800
+        },
+        "fast_sequential": {
+          "median_ms": 0.038125,
+          "p95_ms": 0.04175205,
+          "samples": 800
+        },
+        "fast_joint": {
+          "median_ms": 0.059083,
+          "p95_ms": 0.06488329999999999,
+          "samples": 800
+        },
+        "base": {
+          "median_ms": 0.051042,
+          "p95_ms": 0.0580441,
+          "samples": 800
+        },
+        "full": {
+          "median_ms": 0.057125,
+          "p95_ms": 0.064875,
+          "samples": 800
+        }
+      },
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "nodes": 48,
+      "measurements": {
+        "qsp": {
+          "median_ms": 0.012958,
+          "p95_ms": 0.018708,
+          "samples": 800
+        },
+        "fast_sequential": {
+          "median_ms": 0.029811999999999998,
+          "p95_ms": 0.0414191,
+          "samples": 800
+        },
+        "fast_joint": {
+          "median_ms": 0.039209,
+          "p95_ms": 0.06879315,
+          "samples": 800
+        },
+        "base": {
+          "median_ms": 0.055375,
+          "p95_ms": 0.0639601,
+          "samples": 800
+        },
+        "full": {
+          "median_ms": 0.05775,
+          "p95_ms": 0.06821105000000001,
+          "samples": 800
+        }
+      },
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    }
+  ]
+}

@@ -98,6 +98,8 @@ class RevisionRuntime(Runtime):
                     selection = Selection(None, None, None, "qsp", self.costs["qsp"], "budget")
                 else:
                     selection.plan = available[0]
+                    # The legacy direct-collector forecast does not predict TRACK completion.
+                    selection.raw = selection.predicted = None
         plan = selection.plan
         state = State(r, plan, time, dict(plan.qubits)) if plan is not None else None
         if state is not None and self.policy in {"replicate", "retry"}:

@@ -1,0 +1,2191 @@
+{
+  "phase": "ablation",
+  "smoke": false,
+  "hardware": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_model": null,
+    "logical_cpus": null,
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "workers": 3,
+  "clock": "profiled",
+  "offers_per_run": 320,
+  "burn_in": 64,
+  "runs": 270,
+  "request_policy_records": 86400,
+  "graphs": [
+    "synthetic-24-6",
+    "synthetic-24-7",
+    "synthetic-36-6",
+    "synthetic-36-7",
+    "synthetic-48-6",
+    "synthetic-48-7"
+  ],
+  "seeds": [
+    20027,
+    20140,
+    20253
+  ],
+  "policies": [
+    "aware",
+    "aware_nocost",
+    "aware_independent"
+  ],
+  "conditions": [
+    "light",
+    "busy",
+    "hot",
+    "short_memory",
+    "concurrent"
+  ],
+  "runtime_s": 28.866662665999684,
+  "protocol_sha256": "593acc27407a0a2a1bde0d03b7a0dcc656a393dec1fbd304a7ea079e42bc5675",
+  "profile_sha256": "c2e501510eccb6571dd0560a575e5ee14b7af8db5f96524e035f330b275b514a",
+  "profiled_hardware": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_model": "Apple M5",
+    "logical_cpus": "10",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "calibration_sha256": "4c39364b530a186c3f3e9b5f2b585e8c049ed0df435f6cc13730f3ffd1c27ef1",
+  "settings": [
+    {
+      "graph": "synthetic-24-6",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          9,
+          23
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "coupled_catalog_build_ms": 61.16804200064507,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-6",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          9,
+          23
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "coupled_catalog_build_ms": 77.8447499997128,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-6",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          9,
+          23
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "coupled_catalog_build_ms": 62.295333000292885,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-6",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          9,
+          23
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "coupled_catalog_build_ms": 68.9919579999696,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-6",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          9,
+          23
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "coupled_catalog_build_ms": 81.11266699961561,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-7",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          17
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "coupled_catalog_build_ms": 54.169125000044005,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-7",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          17
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "coupled_catalog_build_ms": 52.40058299932571,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-7",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          17
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "coupled_catalog_build_ms": 48.42383399954997,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-7",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          17
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "coupled_catalog_build_ms": 56.99812500097323,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-24-7",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          17
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "coupled_catalog_build_ms": 56.491334000384086,
+      "nodes": 24,
+      "clock_costs_ms": {
+        "qsp": 0.03550205,
+        "fast_sequential": 0.05583605,
+        "fast_joint": 0.07225,
+        "base": 0.070875,
+        "full": 0.09092325
+      }
+    },
+    {
+      "graph": "synthetic-36-6",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          29,
+          26
+        ],
+        [
+          35,
+          8
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          31,
+          15
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "coupled_catalog_build_ms": 79.21820800038404,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-6",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          29,
+          26
+        ],
+        [
+          35,
+          8
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          31,
+          15
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "coupled_catalog_build_ms": 72.27229199997964,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-6",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          29,
+          26
+        ],
+        [
+          35,
+          8
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          31,
+          15
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "coupled_catalog_build_ms": 74.80754199968942,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-6",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          29,
+          26
+        ],
+        [
+          35,
+          8
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          31,
+          15
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "coupled_catalog_build_ms": 76.06395800030441,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-6",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          29,
+          26
+        ],
+        [
+          35,
+          8
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          31,
+          15
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          25,
+          35
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "coupled_catalog_build_ms": 73.71299999977055,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-7",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          15,
+          25
+        ],
+        [
+          31,
+          16
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          9,
+          35
+        ]
+      ],
+      "coupled_catalog_build_ms": 99.84400000030291,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-7",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          15,
+          25
+        ],
+        [
+          31,
+          16
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          9,
+          35
+        ]
+      ],
+      "coupled_catalog_build_ms": 112.83441699924879,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-7",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          15,
+          25
+        ],
+        [
+          31,
+          16
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          9,
+          35
+        ]
+      ],
+      "coupled_catalog_build_ms": 102.52725000100327,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-7",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          15,
+          25
+        ],
+        [
+          31,
+          16
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          9,
+          35
+        ]
+      ],
+      "coupled_catalog_build_ms": 107.04799999984971,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-36-7",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          15,
+          25
+        ],
+        [
+          31,
+          16
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          21
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          9,
+          35
+        ]
+      ],
+      "coupled_catalog_build_ms": 94.52975000021979,
+      "nodes": 36,
+      "clock_costs_ms": {
+        "qsp": 0.03867324999999999,
+        "fast_sequential": 0.06175205,
+        "fast_joint": 0.0848833,
+        "base": 0.0780441,
+        "full": 0.10487500000000001
+      }
+    },
+    {
+      "graph": "synthetic-48-6",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          44,
+          23
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          29,
+          46
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          31
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          32,
+          23
+        ]
+      ],
+      "coupled_catalog_build_ms": 99.94420899965917,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-6",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          44,
+          23
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          29,
+          46
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          31
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          32,
+          23
+        ]
+      ],
+      "coupled_catalog_build_ms": 96.4458749986079,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-6",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          44,
+          23
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          29,
+          46
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          31
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          32,
+          23
+        ]
+      ],
+      "coupled_catalog_build_ms": 95.7494169997517,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-6",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          44,
+          23
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          29,
+          46
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          31
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          32,
+          23
+        ]
+      ],
+      "coupled_catalog_build_ms": 99.86883300007321,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-6",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          44,
+          23
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          29,
+          46
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          31
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          32,
+          23
+        ]
+      ],
+      "coupled_catalog_build_ms": 94.34800000053656,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-7",
+      "condition": {
+        "name": "busy",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          34,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          18
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "coupled_catalog_build_ms": 62.22600000000966,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-7",
+      "condition": {
+        "name": "concurrent",
+        "load": 0.73,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.55,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          34,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          18
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "coupled_catalog_build_ms": 68.02945799972804,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-7",
+      "condition": {
+        "name": "hot",
+        "load": 0.94,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 0.9,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          34,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          18
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "coupled_catalog_build_ms": 68.7701669994567,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-7",
+      "condition": {
+        "name": "light",
+        "load": 0.32,
+        "memory_scale": 1.0,
+        "mean_gap_ms": 2.4,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          34,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          18
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "coupled_catalog_build_ms": 59.172458000830375,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    },
+    {
+      "graph": "synthetic-48-7",
+      "condition": {
+        "name": "short_memory",
+        "load": 0.73,
+        "memory_scale": 0.6,
+        "mean_gap_ms": 1.45,
+        "outage": false,
+        "dephasing": false,
+        "cold": false
+      },
+      "pairs": [
+        [
+          34,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          18
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "coupled_catalog_build_ms": 68.24662500002887,
+      "nodes": 48,
+      "clock_costs_ms": {
+        "qsp": 0.038708,
+        "fast_sequential": 0.061419100000000004,
+        "fast_joint": 0.08879315,
+        "base": 0.08396010000000001,
+        "full": 0.10821105000000002
+      }
+    }
+  ]
+}

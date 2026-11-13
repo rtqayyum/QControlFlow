@@ -91,7 +91,7 @@ def main():
                    if r["joint_frame_ms"] is not None and r["isolated_frame_ms"] is not None]
     summary = {"cases": len(rows), "quantum_emissions_frozen": True,
                "identical_background_tapes": True,
-               "qualification_disagreements": sum(r["joint_qualified"] != r["isolated_qualified"] for r in rows),
+               "qualification_disagreements": int(sum(r["joint_qualified"] != r["isolated_qualified"] for r in rows)),
                "both_complete_cases": len(differences),
                "median_joint_minus_isolated_ms": float(np.median(differences)),
                "p95_joint_minus_isolated_ms": float(np.quantile(differences, .95)),

@@ -1,0 +1,11 @@
+{
+  "cases": 504,
+  "quantum_emissions_frozen": true,
+  "identical_background_tapes": true,
+  "qualification_disagreements": 1,
+  "both_complete_cases": 500,
+  "median_joint_minus_isolated_ms": 0.0,
+  "p95_joint_minus_isolated_ms": 0.1280000000000001,
+  "max_joint_minus_isolated_ms": 2.2560000000000002,
+  "joint_only_missing_outcome": 1
+}

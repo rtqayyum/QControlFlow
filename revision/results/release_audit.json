@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-13",
+  "original_artifact_commit": "a92869900a93bb9a38881ae7a436d20ae283e69d",
+  "original_sha256_entries_verified": 87,
+  "revision_unit_tests_passed": 11,
+  "original_pilot_unit_tests_passed": 10,
+  "unit_test_commands": [
+    "python3 -m unittest revision.test_revision -v",
+    "python3 -m unittest discover -s pilot -p 'test_*.py'"
+  ],
+  "primary_superiority_criterion_met": false,
+  "protocol_sha256": "593acc27407a0a2a1bde0d03b7a0dcc656a393dec1fbd304a7ea079e42bc5675",
+  "profile_sha256": "c2e501510eccb6571dd0560a575e5ee14b7af8db5f96524e035f330b275b514a",
+  "calibration_sha256": "4c39364b530a186c3f3e9b5f2b585e8c049ed0df435f6cc13730f3ffd1c27ef1",
+  "trace_record_audits": {
+    "evaluate": {
+      "request_records_checked": 1128960,
+      "policy_tapes_identical": true,
+      "qualification_and_budget_checks": true
+    },
+    "measured": {
+      "request_records_checked": 115200,
+      "policy_tapes_identical": true,
+      "qualification_and_budget_checks": true
+    },
+    "ablation": {
+      "request_records_checked": 86400,
+      "policy_tapes_identical": true,
+      "qualification_and_budget_checks": true
+    }
+  },
+  "packaging": {
+    "split_and_unsplit_analysis_identical": true,
+    "logical_trace_sha256": "125a453c405b72d80a349b3ca18d3bdde5361225567303cd6cf26b675c665c08",
+    "records": 1128960,
+    "parts": 6
+  },
+  "numerical_validation": "validation.json",
+  "limitations": [
+    "The superiority criterion against shortest and sequential is not met.",
+    "The tracking comparator is QNP inspired, not a complete QNP reproduction.",
+    "A common resource cap is not equal realized consumption.",
+    "Synthetic simulation does not establish hardware validity or accessibility/inclusion effects."
+  ]
+}

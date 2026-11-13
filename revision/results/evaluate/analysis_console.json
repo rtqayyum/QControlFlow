@@ -1,0 +1,413 @@
+{
+  "audit": {
+    "request_records_checked": 1128960,
+    "policy_tapes_identical": true,
+    "qualification_and_budget_checks": true
+  },
+  "ordinary": {
+    "aware": {
+      "offered": 107520,
+      "admitted": 84363,
+      "qualified": 55427,
+      "mode_full": 57220,
+      "mode_base": 27143,
+      "qualified_pct": 51.550409226190474,
+      "admitted_miss_pct": 34.29939665493166,
+      "control_byte_hops_per_offer": 2050.043526785714,
+      "memory_slot_ms_per_offer": 39.971216009481225,
+      "mean_reserved_byte_hops": 1223.8591799722626,
+      "p50_cpu_ms": 0.096416,
+      "p95_cpu_ms": 0.192375,
+      "p50_applied_ms": 0.09092325,
+      "p95_controller_wait_ms": 0.03826396424591881,
+      "p95_delivery_ms": 13.081138774744765,
+      "statuses": {
+        "fidelity": 19729,
+        "activation": 4458,
+        "capacity": 23157,
+        "qualified": 55427,
+        "swap": 883,
+        "generation": 414,
+        "deadline_or_control_loss": 3452
+      }
+    },
+    "batch_joint": {
+      "offered": 107520,
+      "admitted": 84396,
+      "qualified": 55508,
+      "mode_full": 84396,
+      "qualified_pct": 51.62574404761905,
+      "admitted_miss_pct": 34.22911038437841,
+      "control_byte_hops_per_offer": 2044.470982142857,
+      "memory_slot_ms_per_offer": 39.77006370460514,
+      "mean_reserved_byte_hops": 1215.8200862600124,
+      "p50_cpu_ms": 0.078917,
+      "p95_cpu_ms": 0.157333,
+      "p50_applied_ms": 0.10487500000000001,
+      "p95_controller_wait_ms": 0.04395320433818682,
+      "p95_delivery_ms": 13.114387230971314,
+      "statuses": {
+        "fidelity": 19675,
+        "activation": 4444,
+        "capacity": 23124,
+        "swap": 890,
+        "qualified": 55508,
+        "deadline_or_control_loss": 3461,
+        "generation": 418
+      }
+    },
+    "fast_joint": {
+      "offered": 107520,
+      "admitted": 84416,
+      "qualified": 55527,
+      "mode_fast_joint": 84416,
+      "qualified_pct": 51.64341517857143,
+      "admitted_miss_pct": 34.22218536770281,
+      "control_byte_hops_per_offer": 2043.8109375,
+      "memory_slot_ms_per_offer": 39.669462383331634,
+      "mean_reserved_byte_hops": 1214.8385140257772,
+      "p50_cpu_ms": 0.0545,
+      "p95_cpu_ms": 0.11725,
+      "p50_applied_ms": 0.0848833,
+      "p95_controller_wait_ms": 0.030149489866364603,
+      "p95_delivery_ms": 13.115402303788343,
+      "statuses": {
+        "fidelity": 19679,
+        "activation": 4417,
+        "capacity": 23104,
+        "swap": 890,
+        "qualified": 55527,
+        "deadline_or_control_loss": 3489,
+        "generation": 414
+      }
+    },
+    "fast_sequential": {
+      "offered": 107520,
+      "admitted": 84421,
+      "qualified": 55573,
+      "mode_fast_sequential": 84421,
+      "qualified_pct": 51.686197916666664,
+      "admitted_miss_pct": 34.171592376304474,
+      "control_byte_hops_per_offer": 2041.3995535714287,
+      "memory_slot_ms_per_offer": 39.62993141347871,
+      "mean_reserved_byte_hops": 1212.0851446914867,
+      "p50_cpu_ms": 0.04125,
+      "p95_cpu_ms": 0.085625,
+      "p50_applied_ms": 0.061419100000000004,
+      "p95_controller_wait_ms": 0.006722691635723986,
+      "p95_delivery_ms": 13.108203064609633,
+      "statuses": {
+        "fidelity": 19583,
+        "activation": 4471,
+        "capacity": 23099,
+        "swap": 908,
+        "qualified": 55573,
+        "deadline_or_control_loss": 3468,
+        "generation": 418
+      }
+    },
+    "qsp": {
+      "offered": 107520,
+      "admitted": 84261,
+      "qualified": 53798,
+      "mode_qsp": 84261,
+      "qualified_pct": 50.03534226190476,
+      "admitted_miss_pct": 36.15314320978863,
+      "control_byte_hops_per_offer": 2015.6308779761905,
+      "memory_slot_ms_per_offer": 39.28554411600128,
+      "mean_reserved_byte_hops": 1180.7763022038666,
+      "p50_cpu_ms": 0.024208,
+      "p95_cpu_ms": 0.05225,
+      "p50_applied_ms": 0.03867324999999999,
+      "p95_controller_wait_ms": 0.0,
+      "p95_delivery_ms": 13.057582628050634,
+      "statuses": {
+        "fidelity": 20917,
+        "activation": 4414,
+        "capacity": 23259,
+        "swap": 880,
+        "qualified": 53798,
+        "deadline_or_control_loss": 3865,
+        "generation": 387
+      }
+    },
+    "qsp_priority": {
+      "offered": 107520,
+      "admitted": 95820,
+      "qualified": 82511,
+      "mode_qsp": 95820,
+      "qualified_pct": 76.74014136904762,
+      "admitted_miss_pct": 13.88958463786266,
+      "control_byte_hops_per_offer": 2146.942782738095,
+      "memory_slot_ms_per_offer": 26.225843721555933,
+      "mean_reserved_byte_hops": 1177.3274890419536,
+      "p50_cpu_ms": 0.027625,
+      "p95_cpu_ms": 0.061541,
+      "p50_applied_ms": 0.03867324999999999,
+      "p95_controller_wait_ms": 0.0,
+      "p95_delivery_ms": 7.168522371090489,
+      "statuses": {
+        "qualified": 82511,
+        "capacity": 11700,
+        "swap": 997,
+        "fidelity": 8478,
+        "generation": 476,
+        "activation": 2869,
+        "deadline_or_control_loss": 489
+      }
+    },
+    "track": {
+      "offered": 107520,
+      "admitted": 83529,
+      "qualified": 50258,
+      "mode_qsp": 83529,
+      "qualified_pct": 46.74293154761905,
+      "admitted_miss_pct": 39.83167522656802,
+      "control_byte_hops_per_offer": 2159.112276785714,
+      "memory_slot_ms_per_offer": 39.9712388129435,
+      "mean_reserved_byte_hops": 1435.5828514647608,
+      "p50_cpu_ms": 0.031708,
+      "p95_cpu_ms": 0.066375,
+      "p50_applied_ms": 0.03867324999999999,
+      "p95_controller_wait_ms": 0.0,
+      "p95_delivery_ms": 13.350452439879009,
+      "statuses": {
+        "fidelity": 22897,
+        "activation": 4385,
+        "capacity": 23703,
+        "swap": 821,
+        "qualified": 50258,
+        "deadline_or_control_loss": 4781,
+        "generation": 387,
+        "budget": 288
+      }
+    }
+  },
+  "effects": [
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "qsp",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": 1.5150669642857146,
+      "ci_pp": [
+        0.9281994047619049,
+        2.1103050595238098
+      ],
+      "by_graph_pp": {
+        "abilene": 0.13020833333333331,
+        "polska": 0.9244791666666666,
+        "synthetic-24-4": 1.2760416666666667,
+        "synthetic-24-5": 1.6796875,
+        "synthetic-24-6": 3.7369791666666665,
+        "synthetic-24-7": 2.734375,
+        "synthetic-36-4": 1.0677083333333333,
+        "synthetic-36-5": 2.5,
+        "synthetic-36-6": 0.9895833333333333,
+        "synthetic-36-7": 0.052083333333333336,
+        "synthetic-48-4": -0.46875,
+        "synthetic-48-5": 2.2526041666666665,
+        "synthetic-48-6": 1.9401041666666667,
+        "synthetic-48-7": 2.3958333333333335
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "fast_sequential",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": -0.13578869047619047,
+      "ci_pp": [
+        -0.30136253720238093,
+        0.018601190476190483
+      ],
+      "by_graph_pp": {
+        "abilene": 0.4427083333333333,
+        "polska": -0.09114583333333333,
+        "synthetic-24-4": -0.013020833333333334,
+        "synthetic-24-5": -0.49479166666666663,
+        "synthetic-24-6": -0.06510416666666666,
+        "synthetic-24-7": -0.0390625,
+        "synthetic-36-4": -0.3645833333333333,
+        "synthetic-36-5": -0.1953125,
+        "synthetic-36-6": -0.078125,
+        "synthetic-36-7": -0.7942708333333333,
+        "synthetic-48-4": 0.20833333333333334,
+        "synthetic-48-5": 0.0,
+        "synthetic-48-6": 0.09114583333333333,
+        "synthetic-48-7": -0.5078125
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "fast_joint",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": -0.0930059523809524,
+      "ci_pp": [
+        -0.29950241815476203,
+        0.0818452380952381
+      ],
+      "by_graph_pp": {
+        "abilene": 0.20833333333333334,
+        "polska": 0.3125,
+        "synthetic-24-4": -0.49479166666666663,
+        "synthetic-24-5": 0.234375,
+        "synthetic-24-6": 0.026041666666666668,
+        "synthetic-24-7": -0.18229166666666666,
+        "synthetic-36-4": -0.078125,
+        "synthetic-36-5": 0.0,
+        "synthetic-36-6": -0.1171875,
+        "synthetic-36-7": -1.1067708333333335,
+        "synthetic-48-4": 0.09114583333333333,
+        "synthetic-48-5": 0.2864583333333333,
+        "synthetic-48-6": -0.026041666666666668,
+        "synthetic-48-7": -0.4557291666666667
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "batch_joint",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": -0.07533482142857142,
+      "ci_pp": [
+        -0.28924851190476186,
+        0.11253720238095237
+      ],
+      "by_graph_pp": {
+        "abilene": 0.4427083333333333,
+        "polska": 0.3645833333333333,
+        "synthetic-24-4": -0.4427083333333333,
+        "synthetic-24-5": 0.32552083333333337,
+        "synthetic-24-6": 0.052083333333333336,
+        "synthetic-24-7": -0.2734375,
+        "synthetic-36-4": -0.234375,
+        "synthetic-36-5": 0.026041666666666668,
+        "synthetic-36-6": -0.0390625,
+        "synthetic-36-7": -1.0677083333333333,
+        "synthetic-48-4": 0.13020833333333331,
+        "synthetic-48-5": 0.20833333333333334,
+        "synthetic-48-6": -0.13020833333333331,
+        "synthetic-48-7": -0.4166666666666667
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "qsp_priority",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": -25.189732142857146,
+      "ci_pp": [
+        -27.53815569196429,
+        -22.55950055803572
+      ],
+      "by_graph_pp": {
+        "abilene": -21.888020833333332,
+        "polska": -12.239583333333332,
+        "synthetic-24-4": -23.020833333333332,
+        "synthetic-24-5": -27.34375,
+        "synthetic-24-6": -26.627604166666668,
+        "synthetic-24-7": -19.583333333333332,
+        "synthetic-36-4": -26.223958333333336,
+        "synthetic-36-5": -26.575520833333332,
+        "synthetic-36-6": -27.591145833333336,
+        "synthetic-36-7": -27.695312500000004,
+        "synthetic-48-4": -34.010416666666664,
+        "synthetic-48-5": -28.072916666666664,
+        "synthetic-48-6": -26.4453125,
+        "synthetic-48-7": -25.338541666666664
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "aware",
+      "baseline": "track",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": 4.807477678571429,
+      "ci_pp": [
+        4.017857142857143,
+        5.665945870535714
+      ],
+      "by_graph_pp": {
+        "abilene": 3.3333333333333335,
+        "polska": 5.1171875,
+        "synthetic-24-4": 2.6953125,
+        "synthetic-24-5": 5.078125,
+        "synthetic-24-6": 5.950520833333333,
+        "synthetic-24-7": 4.596354166666667,
+        "synthetic-36-4": 3.3333333333333335,
+        "synthetic-36-5": 7.760416666666667,
+        "synthetic-36-6": 4.765625,
+        "synthetic-36-7": 5.442708333333333,
+        "synthetic-48-4": 3.0338541666666665,
+        "synthetic-48-5": 4.635416666666667,
+        "synthetic-48-6": 8.0859375,
+        "synthetic-48-7": 3.4765625
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "batch_joint",
+      "baseline": "qsp",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": 1.5904017857142858,
+      "ci_pp": [
+        0.9709821428571429,
+        2.205171130952381
+      ],
+      "by_graph_pp": {
+        "abilene": -0.3125,
+        "polska": 0.5598958333333334,
+        "synthetic-24-4": 1.7187500000000002,
+        "synthetic-24-5": 1.3541666666666667,
+        "synthetic-24-6": 3.6848958333333335,
+        "synthetic-24-7": 3.0078125,
+        "synthetic-36-4": 1.3020833333333335,
+        "synthetic-36-5": 2.473958333333333,
+        "synthetic-36-6": 1.0286458333333333,
+        "synthetic-36-7": 1.1197916666666667,
+        "synthetic-48-4": -0.5989583333333334,
+        "synthetic-48-5": 2.0442708333333335,
+        "synthetic-48-6": 2.0703125,
+        "synthetic-48-7": 2.8125
+      }
+    },
+    {
+      "condition": "ordinary",
+      "policy": "batch_joint",
+      "baseline": "fast_sequential",
+      "paired_offers": 107520,
+      "graphs": 14,
+      "delta_pp": -0.06045386904761905,
+      "ci_pp": [
+        -0.23251488095238096,
+        0.09207589285714286
+      ],
+      "by_graph_pp": {
+        "abilene": 0.0,
+        "polska": -0.4557291666666667,
+        "synthetic-24-4": 0.42968750000000006,
+        "synthetic-24-5": -0.8203125,
+        "synthetic-24-6": -0.1171875,
+        "synthetic-24-7": 0.234375,
+        "synthetic-36-4": -0.13020833333333331,
+        "synthetic-36-5": -0.22135416666666666,
+        "synthetic-36-6": -0.0390625,
+        "synthetic-36-7": 0.2734375,
+        "synthetic-48-4": 0.078125,
+        "synthetic-48-5": -0.20833333333333334,
+        "synthetic-48-6": 0.22135416666666666,
+        "synthetic-48-7": -0.09114583333333333
+      }
+    }
+  ],
+  "superiority_criterion_met": false
+}

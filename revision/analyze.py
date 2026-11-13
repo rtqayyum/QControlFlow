@@ -1,5 +1,7 @@
 """Audit held-out revision traces and compute paired effects and calibration."""
 from collections import Counter, defaultdict
+from contextlib import ExitStack
+from itertools import chain
 from hashlib import sha256
 import argparse
 import csv
@@ -44,8 +46,10 @@ def summarize(folder):
     status = defaultdict(Counter)
     calibration = defaultdict(CalibrationStats)
     total = 0
-    with gzip.open(folder / "requests.csv.gz", "rt", newline="") as stream:
-        for row in csv.DictReader(stream):
+    trace_paths = [folder / p["path"] for p in manifest.get("trace_parts", [])] or [folder / "requests.csv.gz"]
+    with ExitStack() as stack:
+        streams = [stack.enter_context(gzip.open(p, "rt", newline="")) for p in trace_paths]
+        for row in chain.from_iterable(csv.DictReader(stream) for stream in streams):
             total += 1
             c, g, seed, policy = (row[x] for x in ["condition", "topology", "seed", "policy"])
             identity = tuple(row[x] for x in ["number", "source", "dest", "offer_ms", "deadline_ms", "min_fidelity", "physical_seed"])

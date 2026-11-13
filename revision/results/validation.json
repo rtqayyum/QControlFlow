@@ -1,0 +1,19 @@
+{
+  "density_matrix": {
+    "cases": 320,
+    "max_absolute_error": 5.551115123125783e-16
+  },
+  "fifo": {
+    "cases": 10000,
+    "drops": 1667,
+    "max_finish_error_ms": 0.0
+  },
+  "allowance": {
+    "cases": 20000,
+    "qualified": 1362
+  },
+  "factored_scores": {
+    "cases": 36560,
+    "max_absolute_score_error": 0
+  }
+}
